@@ -3,6 +3,16 @@
 import * as ts from "typescript";
 import * as fs from "fs";
 
+interface PropDoc{
+    
+}
+interface BabylonDocEntry{
+    description: string;
+    props: {
+        [key: string]: PropDoc
+    }
+}
+
 interface DocEntry {
     name?: string,
     fileName?: string,
